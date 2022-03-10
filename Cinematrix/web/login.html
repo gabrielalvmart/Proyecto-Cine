@@ -1,0 +1,38 @@
+<!-- -->
+<div class="row">              
+    <div class="modal fade" id="loginDialog" tabindex="-1" role="dialog">
+        <div class="modal-dialog" style="width: 420px">
+            <div class="modal-content">
+                <div class="modal-header" >
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <div > <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">&times;</span> </button> </div>
+                </div>
+                <form id="loginForm">
+                    <div class="modal-body">
+                        <div id="div-login-msg">
+                            <div id="icon-login-msg" ></div>
+                            <span>Iniciar Sesión</span>
+                        </div>
+                        <br>
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend "><span class="input-group-text"><i class="fas fa-id-card"></i></span></div>
+                            <input class="form-control" placeholder="Cédula del usuario" type="text" id="cedula" name="cedula" value="" required>
+                            <div class="invalid-feedback">Favor ingrese Cédula del usuario</div>
+                        </div>
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-key bigicon"></i></span></div>
+                            <input class="form-control" placeholder="Clave del usuario" type="password" id="password" name="password" value="" required>
+                            <div class="invalid-feedback">Favor ingrese la clave del usuario</div>
+                        </div>                     
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <div>
+                            <button type="button" id="login" class="btn btn-primary btn-lg btn-block">Ingresar</button>
+                        </div>
+                    </div>
+                    <div id="errorDiv" style="width:80%; margin: auto;"></div>  
+                </form>
+            </div>
+        </div>
+    </div>
+</div> 
